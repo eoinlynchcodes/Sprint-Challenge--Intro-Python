@@ -1,5 +1,3 @@
-Oop1 
-
 # Write classes for the following class hierarchy:
 #
 #  [Vehicle]->[FlightVehicle]->[Starship]
@@ -21,29 +19,22 @@ Oop1
 # Put a comment noting which class is the base class
 
 # This is the base class
-class Vechicle:
-    def __init__(self, carries_people):
-        self.carries_people = carries_people
+class Vehicle():
+    pass
 
 
-class GroundVehicle(Vechicle):
-    def __init__(self, carries_people, number_of_wheels):
-        super.__init__(carries_people, number_of_wheels)
+class GroundVehicle(Vehicle):
+    pass
 
 class Car(GroundVehicle):
-    def __init__(self, carries_people, number_of_wheels):
-        super.__init__(carries_people, number_of_wheels)
+    pass
 
 class Motorcycle(GroundVehicle):
-    def __init__(self, carries_people, number_of_wheels, eoin_would_drive):
-        super.__init__(carries_people, number_of_wheels)
-        self.eoin_would_drive = eoin_would_drive
+    pass
 
 
-class FlightVehicle(Vechicle):
-    def __init__(self, carries_people, has_wings):
-        super.__init__(carries_people)
-        self.has_wings = has_wings
+class FlightVehicle(Vehicle):
+    pass
 
 class Airplane(FlightVehicle):
     pass
